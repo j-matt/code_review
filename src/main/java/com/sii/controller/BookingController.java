@@ -68,16 +68,5 @@ public class BookingController {
         return ResponseEntity.ok(searchRepository.findByOriginAndDestination(origin, destination));
     }
 
-  /*  // Update Contact with PATCH
-    @RequestMapping(value = "contacts/{id}", method = RequestMethod.PATCH)
-    public ResponseEntity<Contact> patchUpdateContact(@PathVariable Long id, @RequestBody Contact contact) {
-        return contactService.patchUpdateContact(id, contact);
-    }
-
-    // Update Contact with PUT
-    @RequestMapping(value = "contacts/{id}", method = RequestMethod.PUT)
-    public ResponseEntity<Contact> putUpdateContact(@PathVariable Long id, @RequestBody Contact contact) {
-        return contactService.putUpdateContact(id, contact);
-    }*/
 
 }
